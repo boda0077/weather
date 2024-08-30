@@ -1,14 +1,18 @@
 {
+  "homepage": "https://boda0077.github.io/weather/",
   "name": "my-project",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
-  },
+  "dev": "vite",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist",  
+  "build": "vite build",
+  "lint": "eslint .",
+  "preview": "vite preview"
+}
+,
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
